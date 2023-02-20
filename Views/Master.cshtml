@@ -1,0 +1,51 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+@await Html.PartialAsync("~/Views/Partials/_Header.cshtml")
+</head>
+
+<!-- page wrapper -->
+<body>
+    @RenderBody()
+
+    <div class="boxed_wrapper">
+
+        @await Html.PartialAsync("~/Views/Partials/_Footer.cshtml")
+        @await Html.PartialAsync("~/Views/Partials/_DonatePopup.cshtml")
+        @await Html.PartialAsync("~/Views/Partials/_SidebarItemWidget.cshtml")
+
+        <!-- scroll to top -->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <i class="far fa-long-arrow-up"></i>
+        </button>   
+    </div>
+
+    <!-- jquery plugins -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/scrollbar.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/nav-tool.js"></script>
+    <script src="assets/js/jquery.bootstrap-touchspin.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/text_animation.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+
+    <!-- main-js -->
+    <script src="assets/js/script.js"></script>
+
+</body><!-- End of .page_wrapper -->
+</html>
